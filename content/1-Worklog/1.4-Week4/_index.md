@@ -1,57 +1,40 @@
 ---
 title: "Week 4 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Secure EC2 Management: Use Systems Manager (Session Manager, Patch Manager, Run Command) to connect to servers, manage patches, and automate tasks.
+* Static Content Delivery: Host web on S3 and set up CloudFront for security, faster delivery speed.
+* System Monitoring: Install Grafana software to visualize and monitor resource metrics.
+* Resource Organization: Classify and automate management of large amounts of resources using Tags and Resource Groups.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                        | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Learn Amazon Systems Manager - Session Manager:<br>&emsp; + Prepare resources (VPC, EC2, IAM Role)<br>&emsp; + Connect to EC2 instances (Public & Private)<br>&emsp; + Manage session logs & configure Port Forwarding<br>&emsp; + Clean up resources | 11/05/2026 | 11/05/2026      | <https://000058.awsstudygroup.com/> |
+| 3   | - Learn AWS Systems Manager:<br>&emsp; + Prepare resources (VPC, Windows EC2, IAM Role)<br>&emsp; + Configure Patch Manager to manage patches<br>&emsp; + Execute commands via Run Command on multiple servers<br>&emsp; + Clean up resources | 12/05/2026 | 12/05/2026      | <https://000031.awsstudygroup.com/> |
+| 4   | - Deploy CloudFront with S3 Bucket Origin:<br>&emsp; + Create S3 bucket and upload index.html file<br>&emsp; + Configure Amazon CloudFront to accelerate content delivery<br>&emsp; + Clean up resources | 13/05/2026 | 13/05/2026      | <https://000094.awsstudygroup.com/> |
+| 5   | - Getting started with basic Grafana:<br>&emsp; + Prepare environment: VPC, Security Group, EC2 and IAM<br>&emsp; + Install Grafana on Linux EC2<br>&emsp; + Practice resource monitoring<br>&emsp; + Clean up resources | 14/05/2026 | 14/05/2026      | <https://000029.awsstudygroup.com/> |
+| 6   | - Manage resources with Tags and Resource Groups:<br>&emsp; + Manage, add/remove Tags via Console and CLI<br>&emsp; + Filter resources based on Tags<br>&emsp; + Create Resource Group based on Tags or CloudFormation<br>&emsp; + Clean up resources | 15/05/2026 | 15/05/2026      | <https://000027.awsstudygroup.com/> |
 
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Systems Manager:
+  * Successfully connected EC2 (Public/Private), configured Port Forwarding, saved session logs. Also used Patch Manager and Run Command for centralized management.
 
-* Successfully created and configured an AWS Free Tier account.
+* S3 & CloudFront:
+  * Created S3 bucket containing index.html file and successfully configured CloudFront content delivery network (CDN).
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Grafana:
+  * Finished preparing the environment, successfully installed Grafana on Linux EC2, and set up monitoring dashboard.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Tags & Resource Groups:
+  * Learned how to attach metadata (Tags) via Console/CLI and create Resource Groups (based on Tags or CloudFormation) to group resources.

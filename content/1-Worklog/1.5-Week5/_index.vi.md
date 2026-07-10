@@ -1,59 +1,36 @@
 ---
 title: "Worklog Tuần 5"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* CloudFormation: Tập dùng code để tự động tạo tài nguyên AWS thay vì ngồi click chuột thủ công.
+* CDK: Nâng cấp lên xịn hơn, dùng các ngôn ngữ lập trình thật (như TypeScript, Python...) để xây dựng hạ tầng.
+* VPC Flow Logs: Học cách theo dõi lưu lượng IP ra/vào xem mạng mẽo hoạt động thế nào.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Tìm hiểu AWS CloudFormation (Cơ bản):<br>&emsp; + Chuẩn bị tài nguyên: Tạo IAM User và IAM Role.<br>&emsp; + Tạo workspace và thiết lập môi trường trên VS Code.<br>&emsp; + Viết và triển khai CloudFormation Template cơ bản. | 18/05/2026 | 18/05/2026 | <https://000037.awsstudygroup.com/> |
+| 3 | - Tìm hiểu AWS CloudFormation (Nâng cao):<br>&emsp; + Thực hành Custom Resources (tạo Lambda function).<br>&emsp; + Tìm hiểu về Mappings, Stacksets và phát hiện trôi dạt (Drift Detection).<br>&emsp; + Dọn dẹp tài nguyên CloudFormation. | 19/05/2026 | 19/05/2026 | <https://000037.awsstudygroup.com/> |
+| 4 | - Bắt đầu với AWS CDK (Cơ bản):<br>&emsp; + Hiểu khái niệm CDK (hoạt động dựa trên CloudFormation) và dùng ngôn ngữ lập trình để định nghĩa kiến trúc.<br>&emsp; + Chuẩn bị IAM Role và cấu hình môi trường làm việc trên VS Code.<br>&emsp; + Tạo workspace cho CDK. | 20/05/2026 | 20/05/2026 | <https://000038.awsstudygroup.com/> |
+| 5 | - Triển khai và Cập nhật AWS CDK:<br>&emsp; + Khởi tạo CDK Template để triển khai kiến trúc cơ bản lên AWS.<br>&emsp; + Thực hành cập nhật (Update) CDK Template.<br>&emsp; + Dọn dẹp tài nguyên CDK. | 21/05/2026 | 21/05/2026 | <https://000038.awsstudygroup.com/> |
+| 6 | - Giám sát hạ tầng mạng với VPC Flow Logs:<br>&emsp; + Tìm hiểu tính năng theo dõi lưu lượng IP ra/vào mạng thông qua VPC Flow Logs.<br>&emsp; + Tạo và kích hoạt VPC Flow Logs, xuất dữ liệu log về Amazon CloudWatch Logs.<br>&emsp; + Giám sát hạ tầng mạng và dọn dẹp tài nguyên. | 22/05/2026 | 22/05/2026 | <https://000074.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* CloudFormation:
+  * Đã biết viết các file template cơ bản trên VS Code và chạy thử thành công để tự động tạo tài nguyên.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* CDK:
+  * Khởi tạo được môi trường làm việc (workspace) và gõ code đẩy được cái kiến trúc cơ bản lên AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* VPC Flow Logs:
+  * Biết cách bật tính năng ghi nhật ký mạng (Flow Logs) đẩy về CloudWatch để xem, đặc biệt là không sợ làm mạng bị lag hay chậm đi.
 
 

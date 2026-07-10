@@ -15,7 +15,7 @@ chapter: false
 
 &emsp; **Trường:** Đại học Công Nghệ TP.HCM
 
-&emsp; **Ngành:** Kỹ thuật Phần mềm
+&emsp; **Ngành:** Công nghệ thông tin
 
 &emsp; **Lớp:** 22DTHD5
 

@@ -6,17 +6,11 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+###  [Blog 1 - Optimizing Generative AI Video Inference](3.1-Blog1/)
+This blog summarizes how Synthesia optimized its AI workflow by transitioning from a sequential video decoding process to an asynchronous architecture on Amazon EC2 G7e instances, helping eliminate GPU bottlenecks and significantly reduce costs.
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+###  [Blog 2 - Modernizing ML Pipelines for Agricultural Robots with Aigen](3.2-Blog2/)
+This blog explores how Aigen transitioned from on-premise infrastructure to an AWS cloud-native architecture using Amazon SageMaker AI. This shift automated data labeling, 4-tier model training, and scaled computational capabilities for autonomous agricultural robots.
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 3 - GPU Cost Attribution in Amazon EKS](3.3-Blog3/)
+This blog introduces a solution to clearly identify and attribute GPU costs for individual teams sharing an Amazon EKS cluster. By combining OpenTelemetry, Prometheus, and Grafana, enterprises can solve the problem of wasted resources and realize FinOps practices in the AI/ML era.

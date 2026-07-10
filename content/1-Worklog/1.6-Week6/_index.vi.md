@@ -1,58 +1,42 @@
 ---
 title: "Worklog Tuần 6"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* AWS Backup: Học cách dùng Machine Learning để phát hiện mã độc hoặc bất thường trong dữ liệu sao lưu.
+* Amazon DLM: Tự động hóa việc giữ các bản sao lưu dài hạn (trên 90 ngày) để tiết kiệm chi phí và tuân thủ quy định.
+* IAM Boundary: Giới hạn quyền tối đa của tài khoản để ngăn chặn rủi ro hacker leo thang đặc quyền.
+* Service Quotas: Biết cách yêu cầu AWS nới lỏng các giới hạn tài nguyên mặc định khi hệ thống cần.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Phân tích AWS Backup:<br>&emsp; + Đánh giá luồng hoạt động của AWS Backup.<br>&emsp; + Kết hợp với EventBridge, Lambda, DynamoDB.<br>&emsp; + Mục đích tự động hóa xử lý sự kiện.<br>&emsp; + Phân tích cơ chế trích xuất block thay đổi. | 25/05/2026 | 25/05/2026 | <https://000089.awsstudygroup.com/> |
+| 3 | - Phân tích Machine Learning:<br>&emsp; + Ứng dụng CloudWatch Machine Learning.<br>&emsp; + Phát hiện bất thường từ dữ liệu block.<br>&emsp; + Bảo vệ hệ thống lưu trữ dữ liệu.<br>&emsp; + Chống tấn công mạng và ransomware. | 26/05/2026 | 26/05/2026 | <https://000089.awsstudygroup.com/> |
+| 4 | - Phân tích Amazon DLM:<br>&emsp; + Lợi ích của EBS Snapshots Archive.<br>&emsp; + Giữ dữ liệu dài hạn trên 90 ngày.<br>&emsp; + Thiết lập chính sách tự động (DLM).<br>&emsp; + Giảm rủi ro mất dữ liệu do con người. | 27/05/2026 | 27/05/2026 | <https://000088.awsstudygroup.com/> |
+| 5 | - Phân tích IAM Boundary:<br>&emsp; + Khái niệm Permission Boundary.<br>&emsp; + Giới hạn quyền tối đa của User/Group.<br>&emsp; + Kết hợp với Identity-based policy.<br>&emsp; + Ngăn chặn lỗi leo thang đặc quyền. | 28/05/2026 | 28/05/2026 | <https://000030.awsstudygroup.com/> |
+| 6 | - Phân tích Service Quotas:<br>&emsp; + Đánh giá hạn mức tài nguyên (quotas).<br>&emsp; + Tìm hiểu giá trị mặc định của AWS.<br>&emsp; + Đánh giá nhu cầu thực tế của hệ thống.<br>&emsp; + Quy trình yêu cầu hỗ trợ tăng hạn mức. | 29/05/2026 | 29/05/2026 | <https://000063.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* AWS Backup:
+  * Hiểu cách hệ thống tự động so sánh các bản snapshot để tìm ra số block dữ liệu bị thay đổi.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Amazon DLM:
+  * Biết cách tạo chính sách tự động lưu/xóa, loại bỏ được các script rườm rà dễ gây lỗi mất dữ liệu.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* IAM Boundary:
+  * Nắm rõ cách kết hợp Permission Boundary với các chính sách (Policy) để khóa chặt quyền hạn.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Service Quotas:
+  * Hiểu quy trình tra cứu hạn mức và các bước gửi yêu cầu cho AWS Support để xin thêm tài nguyên.
 
 

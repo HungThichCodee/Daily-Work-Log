@@ -1,126 +1,121 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “FCAJ Community Day - May 23”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Share the latest trends in AI, Cloud, and career opportunities in the AI era.
+- Demonstrate how to effectively use AI for learning and software development.
+- Introduce AWS services and AI applications in enterprise environments.
+- Present new features of Amazon Q and Amazon CloudFront.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
-
+- **Nguyen Gia Hung** – AWS Solution Architect, Founder of AWS Study Group
+- **Tinh Truong** – Platform Engineer, GoTymeX
+- **Pham Nguyen Hai Anh** – Pacific Vietnam
+- **Nguyen Tuan Thinh** – DevOps Engineer
+- **Lam Hoang Cat Vy** – Senior Business Systems Analyst
+- **Dao Minh Duc** – Solutions Architect 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### AI and Career Trends
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- AI helps reduce software development costs, enabling businesses to build more applications.
+- Employers increasingly value practical experience and real projects over theoretical knowledge alone.
+- Students should strengthen their technical knowledge, soft skills, English proficiency, and personal portfolio to stay competitive.
 
-#### Transitioning to modern application architecture – Microservices
+#### Context in AI
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- The quality of AI-generated responses depends heavily on the provided **context**.
+- Users should clearly define goals, roles, project context, and expected output format when interacting with AI.
+- It is recommended not to mix multiple unrelated topics within the same AI conversation.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### AI First Mindset
 
-#### Domain-Driven Design (DDD)
+- Introduced concepts such as **AI First**, **AI Adoption**, and **Second Brain**.
+- AI should be viewed as a productivity tool that supports developers rather than replacing them.
+- Encouraged building workflows that effectively combine human expertise with AI capabilities.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Amazon Q and AI Agents
 
-#### Event-Driven Architecture
+- Amazon Q can assist with data analysis, dashboard creation, meeting summarization, and programming support.
+- AI Agents can integrate with Gmail, Microsoft Teams, Calendar, and other services to automate repetitive tasks.
+- Demonstrated how AI Agents can be applied in enterprise scenarios.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Amazon CloudFront
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Introduced the new **Flat Rate Pricing** model for Amazon CloudFront.
+- Helps organizations predict CDN costs more accurately and optimize budgets.
+- Improves application performance while enhancing security and cost management.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Development Mindset
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- AI will become an essential assistant throughout the software development lifecycle.
+- Building a strong portfolio and real-world projects is more valuable than relying solely on theoretical knowledge.
+- Continuously learning emerging technologies is essential for maintaining competitiveness.
 
-#### Technical Architecture
+#### Technical Knowledge
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Understood the importance of **context engineering** when working with AI tools.
+- Learned how Amazon Q and AI Agents can automate various development and business tasks.
+- Gained a better understanding of Amazon CloudFront's new Flat Rate Pricing model and its benefits.
 
-#### Modernization Strategy
+#### Career Development
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Employers highly value candidates who can effectively leverage AI in their daily work.
+- Combining technical expertise with business knowledge creates greater professional value.
+- Sharing knowledge and building a personal brand can provide significant career advantages.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Use AI to support programming, documentation, and learning activities.
+- Provide sufficient context when using ChatGPT or Amazon Q to obtain more accurate responses.
+- Explore AI Agents to automate repetitive tasks in software projects.
+- Learn more about Amazon CloudFront to optimize application performance and deployment costs on AWS.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in **FCAJ Community Day - May 23** gave me a deeper understanding of AI trends in the IT industry and how organizations are adopting AI throughout the software development process. The event covered not only AWS technologies but also practical insights into career development and the skills required in the AI era.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from the Speakers
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- The speakers shared valuable real-world experiences in software development, DevOps, AI, and Cloud technologies.
+- Their presentations provided a clearer understanding of AI's role in modern software engineering and current hiring trends.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Technical Experience
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Learned how proper context can significantly improve AI-generated results.
+- Observed practical demonstrations of Amazon Q, AI Agents, and workflow automation.
+- Gained insights into Amazon CloudFront's Flat Rate Pricing model and its advantages for cost management.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Practical Applications
 
-#### Some event photos
-*Add your event photos here*  
+- Learned how AI can be applied to programming, data analysis, and task management.
+- Gained useful ideas for building a stronger portfolio and preparing for future career opportunities.
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Networking and Discussions
+
+- Had the opportunity to interact with speakers and AWS community members.
+- Learned from others' experiences in studying AWS, personal development, and career planning.
+
+#### Lessons Learned
+
+- AI will become an essential skill for future software engineers.
+- A strong portfolio and hands-on projects are increasingly important in the recruitment process.
+- Continuously learning new technologies and using AI effectively can significantly improve both learning and productivity.
+
+#### Some Event Photos
+
+![23-5.png](/images/4-EventParticipated/23-5.png)
+
+> Overall, the event provided valuable insights into AI and Cloud technologies while offering practical knowledge that I can apply to my studies, software projects, and future career development.

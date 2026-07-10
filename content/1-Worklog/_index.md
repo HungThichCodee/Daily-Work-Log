@@ -11,24 +11,24 @@ This Worklog records my entire learning journey and practical work experience du
 
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 2:** [Learn about Cloud9, S3, RDS, Lightsail, Docker and CloudWatch](1.2-week2/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 3:** [Use AWS CLI, explore ElastiCache, Auto Scaling, Route 53 and DynamoDB](1.3-week3/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 4:** [Secure EC2 management, CloudFront delivery and system monitoring](1.4-week4/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 5:** [Automate infrastructure (IaC) with CloudFormation, CDK and network monitoring](1.5-week5/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 6:** [Manage data backups, IAM permissions boundary and resource quotas](1.6-week6/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 7:** [Centralized security management, access control and private S3 network](1.7-week7/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 8:** [Architecture orientation, data flow diagrams and budget estimation](1.8-week8/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 9:** [Task assignment, environment setup and Backend API development](1.9-week9/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 10:** [Finalize Backend programming and API testing for Identity and AI Service](1.10-week10/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 11:** [ECS Container operations, FSx storage management and CI/CD automation](1.11-week11/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 12:** [Journey summary and review of basic AWS services](1.12-week12/)

@@ -1,59 +1,42 @@
 ---
 title: "Worklog Tuần 10"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần 10 (22/06/2026 – 28/06/2026):
+* Kiểm thử toàn bộ API thuộc phân hệ Identity và AI Service.
+* Hoàn thiện xong phần Backend (BE) của dự án đối với 2 dịch vụ này.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - **Hoàn thiện Identity Service (Auth & Users):**<br>&emsp; + Hoàn tất module xác thực bằng `@nestjs/jwt`, `passport-jwt` và mã hóa mật khẩu với `bcryptjs`.<br>&emsp; + Cấu trúc lại schema cơ sở dữ liệu với Prisma (Prisma Migrate/Seed) cho module Users.<br>&emsp; + Tích hợp hệ thống gửi Email (Quên mật khẩu/Xác thực) sử dụng `Nodemailer`. | 22/06/2026 | 22/06/2026 | - |
+| 3 | - **Hoàn thiện AI Service (Core Logic):**<br>&emsp; + Tích hợp thành công đa mô hình ngôn ngữ (LLM): `@google/generative-ai` (Gemini) và `openai`.<br>&emsp; + Hoàn thiện logic Pipeline, Generation và xử lý Agent (Agent orchestration).<br>&emsp; + Ứng dụng Model Context Protocol (MCP) để phân tích ngữ cảnh (Context Memory). | 23/06/2026 | 23/06/2026 | - |
+| 4 | - **Xử lý Bất đồng bộ & Event-driven:**<br>&emsp; + Cấu hình và tối ưu Background Jobs cho AI Service bằng `BullMQ` (Workers).<br>&emsp; + Tích hợp Message Broker (`@genzite/kafka`) để đồng bộ dữ liệu (Events) giữa Identity Service và AI Service. | 24/06/2026 | 24/06/2026 | - |
+| 5 | - **Kiểm thử System và Unit Test:**<br>&emsp; + Viết test (Jest / Supertest) cho các module Auth, Mail (Identity) và Recruitment, Generation (AI Service).<br>&emsp; + Test End-to-End toàn bộ luồng request, đảm bảo request gửi vào hàng đợi BullMQ được xử lý ổn định mà không dính timeout. | 25/06/2026 | 25/06/2026 | - |
+| 6 | - **Đóng gói và Tài liệu hóa:**<br>&emsp; + Review và chuẩn hóa `Dockerfile.dev` cho cả hai microservices.<br>&emsp; + Cập nhật tài liệu API chi tiết cho team Frontend.<br>&emsp; + Báo cáo nghiệm thu hoàn thiện phân hệ Identity và AI Service. | 26/06/2026 | 26/06/2026 | - |
 
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Kiểm thử API:
+  * Đã kiểm thử và xử lý bug toàn bộ API, đảm bảo bảo mật và phản hồi đúng nghiệp vụ trên môi trường AWS.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Identity Service:
+  * Tích hợp JWKS Verification trên server EC2 (Private Subnet) để xác thực JWT token cấp bởi Cognito.
+  * Triển khai cấu trúc Database qua Prisma để quản lý Users, RBAC, Config trên RDS PostgreSQL.
+  * Hoàn thiện luồng Message Broker Kafka và hệ thống gửi Email (Nodemailer).
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* AI Service:
+  * Cấu hình luồng Outbound an toàn từ EC2 qua NAT Gateway để giao tiếp với AI bên ngoài.
+  * Tích hợp caching Redis để lưu trữ AI Response, tối ưu độ trễ và tiết kiệm chi phí.
+  * Hoàn thiện logic cấp link tải lên an toàn giúp client tải file lên S3.
+  * Ứng dụng BullMQ làm Background Workers và Model Context Protocol (MCP).
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 

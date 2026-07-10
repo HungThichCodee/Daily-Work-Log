@@ -1,59 +1,41 @@
 ---
 title: "Worklog Tuần 7"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Security Hub: Gom nhóm và quản lý cảnh báo bảo mật tập trung.
+* IAM Condition: Giới hạn quyền truy cập chặt chẽ theo khung giờ và địa chỉ IP.
+* IAM Boundary: Đặt mức trần quyền hạn để chặn lỗi leo thang đặc quyền.
+* VPC Endpoints: Tạo đường mạng riêng tư để truy cập S3 mà không qua Internet.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Thực hành AWS Security Hub:<br>&emsp; + Bật tính năng AWS Security Hub.<br>&emsp; + Gom các cảnh báo bảo mật về chung một bảng điều khiển.<br>&emsp; + Xem điểm số bảo mật của hệ thống.<br>&emsp; + Dọn dẹp tài nguyên. | 01/06/2026 | 01/06/2026 | <https://000018.awsstudygroup.com/> |
+| 3 | - Quản lý quyền với IAM Role & Condition:<br>&emsp; + Tạo các nhóm (Group) và người dùng (User) cơ bản.<br>&emsp; + Cấu hình mượn quyền (Switch role) cho Admin.<br>&emsp; + Cài đặt khóa quyền chỉ cho phép truy cập đúng IP.<br>&emsp; + Khóa quyền chỉ cho phép truy cập theo khung giờ.<br>&emsp; + Dọn dẹp tài nguyên. | 02/06/2026 | 02/06/2026 | <https://000044.awsstudygroup.com/> |
+| 4 | - Chặn quyền với IAM Permission Boundary:<br>&emsp; + Tạo các chính sách giới hạn quyền hạn (Restriction Policy).<br>&emsp; + Gắn ranh giới quyền này cho User.<br>&emsp; + Thử đăng nhập và test xem User có bị chặn quyền không.<br>&emsp; + Dọn dẹp tài nguyên. | 03/06/2026 | 03/06/2026 | <https://000030.awsstudygroup.com/> |
+| 5 | - Kết nối S3 riêng tư (Phần 1 - VPC):<br>&emsp; + Tạo cổng kết nối Gateway Endpoint.<br>&emsp; + Kết nối đến S3 trực tiếp từ trong mạng VPC.<br>&emsp; + Đảm bảo dữ liệu không bị tuồn ra ngoài Internet.<br>&emsp; + Dọn dẹp tài nguyên. | 04/06/2026 | 04/06/2026 | - |
+| 6 | - Kết nối S3 riêng tư (Phần 2 - On-premises):<br>&emsp; + Chuẩn bị và giả lập mạng nội bộ (On-premises).<br>&emsp; + Tạo cổng kết nối Interface Endpoint.<br>&emsp; + Dùng DNS để truy cập S3 an toàn từ mạng nội bộ.<br>&emsp; + Dọn dẹp tài nguyên. | 05/06/2026 | 05/06/2026 | - |
 
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Security Hub:
+  * Bật dịch vụ thành công và xem được điểm số bảo mật.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* IAM Condition:
+  * Cấu hình thành công việc ép người dùng mượn quyền (switch role) đúng IP và giờ.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* IAM Boundary:
+  * Gắn thành công giới hạn quyền tối đa, User không thể tự ý vượt quyền.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* VPC Endpoints:
+  * Tạo thành công các cổng mạng nội bộ (Gateway và Interface) kết nối an toàn tới S3.
 
 

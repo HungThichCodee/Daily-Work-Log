@@ -1,59 +1,42 @@
 ---
 title: "Worklog Tuần 11"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* CloudFormation & FSx: Biết được lý thuyết triển khai hạ tầng tự động (IaC) và cách quản lý hệ thống lưu trữ tệp Windows Server.
+* Vận hành Container: Hiểu rõ vòng đời quản lý ứng dụng Docker trên cụm ECS và các chiến lược cập nhật phiên bản mượt mà.
+* Tự động hóa CI/CD: Đánh giá luồng triển khai CI/CD liên tục từ mã nguồn xuống container để giảm thiểu lỗi thủ công.
+* Giám sát & Bảo mật: Nắm được cách trực quan hóa dữ liệu giám sát và truy cập máy chủ an toàn không cần mở port SSH.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Phân tích AWS CloudFormation:<br>&emsp; + Tìm hiểu khái niệm Cơ sở hạ tầng dưới dạng mã (IaC).<br>&emsp; + Phân tích cách dùng code để mô hình hóa và tự động tạo tài nguyên AWS.<br>&emsp; + Đánh giá các tính năng nâng cao: Custom Resources, Mappings, Stacksets. | 29/06/2026 | 29/06/2026 | <https://000037.awsstudygroup.com/> |
+| 3 | - Nghiên cứu Amazon FSx for Windows:<br>&emsp; + Phân tích kiến trúc lưu trữ tệp Windows Server chạy trên giao thức SMB.<br>&emsp; + Tìm hiểu cơ chế nhân bản dữ liệu tự động (Multi-AZ).<br>&emsp; + Đánh giá tính năng chống trùng lặp dữ liệu và phân bổ dung lượng. | 30/06/2026 | 30/06/2026 | <https://000025.awsstudygroup.com/> |
+| 4 | - Phân tích kiến trúc Amazon ECS:<br>&emsp; + Tìm hiểu cách ECS quản lý và chạy Docker container trên cụm EC2.<br>&emsp; + Phân tích Task Definition và cách tích hợp với Application Load Balancer.<br>&emsp; + Đánh giá chiến lược triển khai không gián đoạn (Blue/Green, Rolling). | 01/07/2026 | 01/07/2026 | <https://000016.awsstudygroup.com/> |
+| 5 | - Tìm hiểu CI/CD Pipeline cho ECS:<br>&emsp; + Phân tích luồng CI/CD giúp tự động hóa quá trình triển khai.<br>&emsp; + Đánh giá tích hợp giữa ECS với Gitlab, Github Actions và CodeBuild.<br>&emsp; + Nghiên cứu cách đẩy log của container về S3 thông qua Firelens. | 02/07/2026 | 02/07/2026 | <https://000017.awsstudygroup.com/> |
+| 6 | - Đánh giá Giám sát & Quản trị hệ thống:<br>&emsp; + Phân tích khả năng trực quan hóa dữ liệu giám sát của Grafana.<br>&emsp; + Tìm hiểu cách kết nối an toàn vào EC2 bằng System Manager - Session Manager.<br>&emsp; + Đánh giá cơ chế lưu trữ lịch sử phiên hoạt động vào Amazon S3. | 03/07/2026 | 03/07/2026 | <https://000029.awsstudygroup.com/><br><https://000058.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* CloudFormation & FSx:
+  * Hiểu cách tự động hóa xây dựng tài nguyên AWS và nắm rõ các thành phần kiến trúc lưu trữ tệp Windows độ sẵn sàng cao.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* ECS Container:
+  * Phân biệt rõ vai trò của Cluster, Task Definition, Service và luồng chia tải với Load Balancer.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Luồng CI/CD:
+  * Nắm vững lý thuyết triển khai tự động từ các kho lưu trữ mã nguồn (Gitlab/Github/CodeBuild) xuống thẳng các container.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Quản lý & Giám sát:
+  * Hiểu cơ chế phân tích log trực quan của Grafana và quy trình thiết lập VPC Endpoint để quản lý EC2 Private an toàn qua Session Manager.
 
 

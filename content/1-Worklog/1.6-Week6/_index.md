@@ -1,57 +1,40 @@
 ---
 title: "Week 6 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* AWS Backup: Learn how to use Machine Learning to detect malware or anomalies in backup data.
+* Amazon DLM: Automate the retention of long-term backups (over 90 days) to save costs and comply with regulations.
+* IAM Boundary: Limit the maximum permissions of an account to prevent the risk of hackers escalating privileges.
+* Service Quotas: Know how to request AWS to relax default resource limits when the system needs it.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                        | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Analyze AWS Backup:<br>&emsp; + Evaluate AWS Backup workflow.<br>&emsp; + Integrate with EventBridge, Lambda, DynamoDB.<br>&emsp; + Purpose of automating event processing.<br>&emsp; + Analyze modified block extraction mechanism. | 25/05/2026 | 25/05/2026      | <https://000089.awsstudygroup.com/> |
+| 3   | - Analyze Machine Learning:<br>&emsp; + Apply CloudWatch Machine Learning.<br>&emsp; + Detect anomalies from block data.<br>&emsp; + Protect data storage system.<br>&emsp; + Prevent cyber attacks and ransomware. | 26/05/2026 | 26/05/2026      | <https://000089.awsstudygroup.com/> |
+| 4   | - Analyze Amazon DLM:<br>&emsp; + Benefits of EBS Snapshots Archive.<br>&emsp; + Keep data long-term over 90 days.<br>&emsp; + Set up automated policies (DLM).<br>&emsp; + Reduce risk of data loss due to human error. | 27/05/2026 | 27/05/2026      | <https://000088.awsstudygroup.com/> |
+| 5   | - Analyze IAM Boundary:<br>&emsp; + Permission Boundary concept.<br>&emsp; + Limit maximum permissions of User/Group.<br>&emsp; + Integrate with Identity-based policy.<br>&emsp; + Prevent privilege escalation errors. | 28/05/2026 | 28/05/2026      | <https://000030.awsstudygroup.com/> |
+| 6   | - Analyze Service Quotas:<br>&emsp; + Evaluate resource limits (quotas).<br>&emsp; + Learn AWS default values.<br>&emsp; + Evaluate actual system needs.<br>&emsp; + Process of requesting limit increase support. | 29/05/2026 | 29/05/2026      | <https://000063.awsstudygroup.com/> |
 
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* AWS Backup:
+  * Understood how the system automatically compares snapshots to find the number of modified data blocks.
 
-* Successfully created and configured an AWS Free Tier account.
+* Amazon DLM:
+  * Knew how to create automated save/delete policies, eliminating cumbersome scripts that easily cause data loss errors.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* IAM Boundary:
+  * Grasped how to combine Permission Boundary with Policies to tightly lock down permissions.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Service Quotas:
+  * Understood the process of looking up quotas and the steps to submit requests to AWS Support to ask for more resources.

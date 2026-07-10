@@ -1,59 +1,49 @@
 ---
 title: "Worklog Tuần 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu về AWS Cloud9 và cách lưu trữ website bằng Amazon S3.
+* Hiểu các khái niệm cơ sở dữ liệu quan hệ với Amazon RDS.
+* Tìm hiểu về Amazon Lightsail để triển khai ứng dụng nhanh và đơn giản.
+* Tìm hiểu về việc triển khai ứng dụng bằng Docker trên Amazon Lightsail Container.
+* Tìm hiểu về Amazon CloudWatch.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu AWS Cloud9                                                                                             | 27/04/2026   | 27/04/2026      |
+| 3   | - Triển khai website tĩnh với Amazon S3: <br>&emsp; + Tạo S3 bucket <br>&emsp; + Tải mã nguồn website lên S3 <br>&emsp; + Cấu hình quyền truy cập <br>&emsp; + Kích hoạt tính năng Static website hosting                                      | 28/04/2026   | 28/04/2026     | <https://000057.awsstudygroup.com/vi/> |
+| 4   | - Tìm hiểu Amazon RDS: <br>&emsp; + Các loại Database engines <br>&emsp; + Khởi tạo một RDS instance <br>&emsp; + Dọn dẹp tài nguyên  | 29/04/2026   | 29/04/2026      | <https://000005.awsstudygroup.com/vi/> |
+| 5   | - Tìm hiểu Amazon Lightsail: <br>&emsp; + Xem tổng quan dịch vụ <br>&emsp; + Tạo Lightsail instance <br>&emsp; + Dọn dẹp tài nguyên     <br>  -  Tìm hiểu Amazon Lightsail Container        | 30/04/2026   | 30/04/2026      | <https://000045.awsstudygroup.com/vi/> |
+| 6   | - Giám sát hệ thống với Amazon CloudWatch:  <br>&emsp; + Tìm hiểu các khái niệm Metric, Log, Alarm <br>&emsp; + Thực hành tạo dashboard và thiết lập cảnh báo <br>&emsp; + Dọn dẹp tài nguyên                                                                                         | 01/05/2026   | 01/05/2026      | <https://000008.awsstudygroup.com/vi/> |
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Môi trường phát triển & Lưu trữ (Cloud9, S3): 
+  * Hiểu về Cloud9 và S3.
+  * Hiểu và thực hành thành công việc triển khai, lưu trữ (hosting) một website tĩnh thông qua dịch vụ Amazon S3
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Amazon RDS:
+  * Nắm được kiến thức cốt lõi và cách vận hành một cơ sở dữ liệu quan hệ được quản lý hoàn toàn với dịch vụ Amazon RDS
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Amazon Lightsail:
+  * Nắm được khái niệm và biết cách sử dụng dịch vụ Amazon Lightsail để tạo, quản lý và triển khai ứng dụng nhanh chóng.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Docker & Lightsail Container:
+  * Nắm được kiến thức cốt lõi và cách vận hành một container ứng dụng với Docker
+  * Triển khai ứng dụng bằng Docker trên Amazon Lightsail Container.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Amazon CloudWatch:
+  * Nắm được kiến thức cốt lõi về các khái niệm Metric, Log, Alarm.
+  * Thực hành tạo dashboard và thiết lập cảnh báo.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 

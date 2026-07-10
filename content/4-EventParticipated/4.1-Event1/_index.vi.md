@@ -1,125 +1,122 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “FCAJ Community Day - May 23”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Chia sẻ xu hướng AI, Cloud và cơ hội nghề nghiệp trong thời đại AI.
+- Hướng dẫn sử dụng AI hiệu quả trong học tập và phát triển phần mềm.
+- Giới thiệu các dịch vụ AWS và ứng dụng AI trong doanh nghiệp.
+- Cập nhật các tính năng mới của Amazon Q và Amazon CloudFront.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Nguyễn Gia Hưng** - AWS Solution Architect, Founder AWS Study Group
+- **Tịnh Trương** - Platform Engineer, GoTymeX
+- **Phạm Nguyễn Hải Anh** - Pacific Vietnam
+- **Nguyễn Tuấn Thịnh** - DevOps Engineer
+- **Lâm Hoàng Cát Vy** – Senior Business Systems Analyst
+- **Đào Minh Đức** – Solutions Architect 
+
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### AI và xu hướng nghề nghiệp
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- AI giúp giảm chi phí phát triển phần mềm, từ đó làm tăng nhu cầu xây dựng các ứng dụng mới.
+- Thị trường tuyển dụng ngày càng yêu cầu ứng viên có sản phẩm thực tế thay vì chỉ kiến thức lý thuyết.
+- Sinh viên cần trang bị kiến thức chuyên môn, kỹ năng mềm, tiếng Anh và portfolio để tăng khả năng cạnh tranh.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Context trong AI
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Chất lượng câu trả lời của AI phụ thuộc rất nhiều vào **context**.
+- Cần cung cấp đầy đủ mục tiêu, vai trò, ngữ cảnh dự án và định dạng mong muốn khi làm việc với AI.
+- Không nên sử dụng một cuộc hội thoại AI cho quá nhiều chủ đề khác nhau.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### AI First Mindset
 
-#### Domain-Driven Design (DDD)
+- Giới thiệu các khái niệm **AI First**, **AI Adoption** và **Second Brain**.
+- AI nên được xem là công cụ hỗ trợ nâng cao năng suất thay vì thay thế hoàn toàn lập trình viên.
+- Khuyến khích xây dựng quy trình làm việc kết hợp giữa con người và AI.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Amazon Q và AI Agents
 
-#### Event-Driven Architecture
+- Amazon Q hỗ trợ phân tích dữ liệu, tạo dashboard, tóm tắt cuộc họp và hỗ trợ lập trình.
+- AI Agent có thể kết nối với Gmail, Microsoft Teams, Calendar và nhiều dịch vụ khác để tự động hóa công việc.
+- Minh họa cách xây dựng AI Agent phục vụ nhu cầu doanh nghiệp.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Amazon CloudFront
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Giới thiệu tính năng **Flat Rate Pricing** mới của CloudFront.
+- Giúp doanh nghiệp dễ dự đoán chi phí CDN và tối ưu ngân sách.
+- Tăng khả năng bảo vệ ứng dụng và cải thiện hiệu năng truy cập.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy Phát Triển
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- AI sẽ trở thành công cụ hỗ trợ không thể thiếu trong quá trình phát triển phần mềm.
+- Việc xây dựng portfolio và các dự án thực tế quan trọng hơn chỉ học lý thuyết.
+- Luôn cập nhật các xu hướng công nghệ mới để nâng cao năng lực cạnh tranh.
 
-#### Kiến Trúc Kỹ Thuật
+#### Kiến Thức Kỹ Thuật
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Hiểu vai trò của **context engineering** khi làm việc với AI.
+- Biết cách sử dụng Amazon Q và AI Agent để tự động hóa nhiều công việc.
+- Hiểu thêm về các tính năng mới của Amazon CloudFront và mô hình tính phí Flat Rate Pricing.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Định Hướng Nghề Nghiệp
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Nhà tuyển dụng đánh giá cao khả năng ứng dụng AI vào công việc.
+- Cần kết hợp kiến thức kỹ thuật với hiểu biết về nghiệp vụ doanh nghiệp.
+- Tự tin chia sẻ kiến thức và xây dựng thương hiệu cá nhân là lợi thế lớn khi tìm việc.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- Áp dụng AI để hỗ trợ lập trình, viết tài liệu và học tập hiệu quả hơn.
+- Cung cấp đầy đủ context khi sử dụng ChatGPT hoặc Amazon Q để nhận kết quả chính xác hơn.
+- Tìm hiểu và áp dụng AI Agent để tự động hóa các tác vụ lặp lại.
+- Nghiên cứu Amazon CloudFront nhằm tối ưu hiệu năng và chi phí cho các dự án triển khai trên AWS.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia **FCAJ Community Day - May 23** giúp tôi hiểu rõ hơn về xu hướng AI trong ngành CNTT cũng như cách các doanh nghiệp đang ứng dụng AI vào quy trình phát triển phần mềm. Nội dung chương trình không chỉ tập trung vào công nghệ AWS mà còn chia sẻ nhiều kinh nghiệm thực tế về định hướng nghề nghiệp và kỹ năng cần có trong thời đại AI.
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Học hỏi từ các diễn giả
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- Các diễn giả chia sẻ nhiều kinh nghiệm thực tế về phát triển phần mềm, DevOps, AI và Cloud.
+- Hiểu rõ hơn về vai trò của AI trong quy trình phát triển phần mềm hiện đại và xu hướng tuyển dụng hiện nay.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### Trải nghiệm kỹ thuật
+
+- Tìm hiểu cách sử dụng context để nâng cao hiệu quả khi làm việc với AI.
+- Quan sát các ví dụ thực tế về Amazon Q, AI Agent và khả năng tự động hóa công việc.
+- Hiểu thêm về tính năng Flat Rate Pricing của Amazon CloudFront và lợi ích trong việc kiểm soát chi phí.
+
+#### Ứng dụng thực tế
+
+- Biết cách khai thác AI để hỗ trợ lập trình, phân tích dữ liệu và quản lý công việc.
+- Có thêm định hướng trong việc xây dựng portfolio, phát triển kỹ năng và chuẩn bị cho quá trình tìm kiếm việc làm.
 
 #### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+
+- Có cơ hội giao lưu với các diễn giả và các bạn cùng đam mê AWS.
+- Học hỏi thêm nhiều kinh nghiệm học tập, phát triển bản thân và định hướng nghề nghiệp từ cộng đồng.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+
+- AI sẽ là kỹ năng quan trọng mà mỗi lập trình viên cần thành thạo.
+- Portfolio và các dự án thực tế ngày càng quan trọng trong quá trình tuyển dụng.
+- Việc liên tục cập nhật kiến thức mới và áp dụng AI đúng cách sẽ giúp nâng cao hiệu quả học tập và làm việc.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+
+![23-5.png](/images/4-EventParticipated/23-5.png)
+
+> Tổng thể, sự kiện giúp tôi hiểu rõ hơn về xu hướng AI và Cloud, đồng thời mang lại nhiều kinh nghiệm thực tế để áp dụng vào quá trình học tập, phát triển dự án và định hướng nghề nghiệp trong tương lai.

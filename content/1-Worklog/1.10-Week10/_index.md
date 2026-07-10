@@ -1,57 +1,39 @@
 ---
 title: "Week 10 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Week 10 Objectives (22/06/2026 – 28/06/2026):
+* Test all APIs belonging to the Identity and AI Service modules.
+* Complete the Backend (BE) part of the project for these 2 services.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                        | Start Date | Completion Date | Reference Material                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| 2   | - **Complete Identity Service (Auth & Users):**<br>&emsp; + Finalize authentication module with `@nestjs/jwt`, `passport-jwt` and password hashing with `bcryptjs`.<br>&emsp; + Restructure database schema with Prisma (Prisma Migrate/Seed) for Users module.<br>&emsp; + Integrate Email sending system (Forgot password/Verify) using `Nodemailer`. | 22/06/2026 | 22/06/2026      | - |
+| 3   | - **Complete AI Service (Core Logic):**<br>&emsp; + Successfully integrate multiple language models (LLM): `@google/generative-ai` (Gemini) and `openai`.<br>&emsp; + Finalize Pipeline, Generation logic and Agent orchestration.<br>&emsp; + Apply Model Context Protocol (MCP) to analyze context (Context Memory). | 23/06/2026 | 23/06/2026      | - |
+| 4   | - **Handle Asynchronous & Event-driven processing:**<br>&emsp; + Configure and optimize Background Jobs for AI Service using `BullMQ` (Workers).<br>&emsp; + Integrate Message Broker (`@genzite/kafka`) to synchronize data (Events) between Identity Service and AI Service. | 24/06/2026 | 24/06/2026      | - |
+| 5   | - **System and Unit Testing:**<br>&emsp; + Write tests (Jest / Supertest) for Auth, Mail (Identity) and Recruitment, Generation (AI Service) modules.<br>&emsp; + End-to-End test the entire request flow, ensuring requests sent to the BullMQ queue are processed stably without timeouts. | 25/06/2026 | 25/06/2026      | - |
+| 6   | - **Packaging and Documentation:**<br>&emsp; + Review and standardize `Dockerfile.dev` for both microservices.<br>&emsp; + Update detailed API documentation for the Frontend team.<br>&emsp; + Report on the completion and acceptance of the Identity and AI Service modules. | 26/06/2026 | 26/06/2026      | - |
 
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* API Testing:
+  * Tested and debugged all APIs, ensuring security and correct business response on the AWS environment.
 
-* Successfully created and configured an AWS Free Tier account.
+* Identity Service:
+  * Integrated JWKS Verification on EC2 server to authenticate JWT tokens issued by Cognito.
+  * Deployed Database structure via Prisma to manage Users, RBAC, Config on RDS PostgreSQL.
+  * Completed Kafka Message Broker flow and Email sending system (Nodemailer).
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* AI Service:
+  * Configured secure Outbound flow from EC2 via NAT Gateway to communicate with external AI.
+  * Integrated Redis caching to store AI Responses, optimizing latency and saving costs.
+  * Completed secure upload link generation logic allowing clients to upload files to S3.
+  * Applied BullMQ as Background Workers and Model Context Protocol (MCP).
