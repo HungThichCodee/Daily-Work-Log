@@ -8,48 +8,22 @@ pre: " <b> 1.12. </b> "
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tổng quan, hệ thống lại các kiến thức và tài liệu đã tìm hiểu trong quá trình thực tập.
+* Hoàn thiện báo cáo thực tập và cập nhật tiến độ công việc.
+* Chuẩn bị nội dung workshop.
+* Triển khai website báo cáo tuần bằng Hugo và deploy lên Vercel.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 06/07/2026   | 06/07/2026      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 07/07/2026   | 07/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 08/07/2026   | 08/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 09/07/2026   | 10/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 10/07/2026   | 10/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tổng quan lại toàn bộ tài liệu đã tìm hiểu trong chương trình FCJ. | 06/07/2026 | 06/07/2026 | |
+| 3 | - Tổng hợp nội dung thực tập.<br>- Cập nhật worklog tuần.<br>- Hoàn thiện báo cáo tiến độ công việc. | 07/07/2026 | 07/07/2026 | |
+| 4 | - Chuẩn bị nội dung workshop.<br>- Tổng hợp kiến thức, kinh nghiệm và các vấn đề đã gặp trong quá trình thực hiện.| 08/07/2026 | 08/07/2026 | |
+| 5 | - Hoàn thiện website báo cáo thực tập bằng Hugo.<br>- Cập nhật nội dung báo cáo tuần.<br>- Deploy website báo cáo lên Vercel và kiểm tra hoạt động. | 09/07/2026 | 09/07/2026 | |
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tổng quan lại các tài liệu đã tìm hiểu.
+* Hoàn thành báo cáo và cập nhật công việc tuần.
+* Hoàn thành workshop chia sẻ kiến thức và kết quả học tập.
+* Đưa báo cáo tuần lên Vercel thành công.

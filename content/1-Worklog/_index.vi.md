@@ -31,4 +31,4 @@ Trang nhật ký công việc này ghi lại toàn bộ lộ trình học tập 
 
 **Tuần 11:** [Tìm hiểu vận hành ECS Container, quản lý lưu trữ FSx và tự động hóa CI/CD](1.11-week11/)
 
-**Tuần 12:** [Tổng kết lộ trình và ôn tập các dịch vụ AWS cơ bản](1.12-week12/)
+**Tuần 12:** [Tổng kết lộ trình và chuẩn bị báo cáo, công việc tuần, workshop](1.12-week12/)

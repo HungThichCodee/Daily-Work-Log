@@ -31,4 +31,4 @@ This Worklog records my entire learning journey and practical work experience du
 
 **Week 11:** [ECS Container operations, FSx storage management and CI/CD automation](1.11-week11/)
 
-**Week 12:** [Journey summary and review of basic AWS services](1.12-week12/)
+**Week 12:** [Summarize the roadmap and prepare reports, weekly tasks, and workshops.](1.12-week12/)
