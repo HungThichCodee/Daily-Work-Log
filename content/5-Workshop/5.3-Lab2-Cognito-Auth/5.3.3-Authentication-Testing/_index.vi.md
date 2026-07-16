@@ -1,5 +1,5 @@
 ---
-title: "Kiểm thử Xác thực"
+title: "6. Kiểm thử Xác thực"
 weight: 33
 chapter: false
 pre: "<b>5.3.3. </b>"

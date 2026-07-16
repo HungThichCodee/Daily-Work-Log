@@ -1,5 +1,5 @@
 ---
-title: "Authentication Testing"
+title: "6. Authentication Testing"
 weight: 33
 chapter: false
 pre: "<b>5.3.3. </b>"

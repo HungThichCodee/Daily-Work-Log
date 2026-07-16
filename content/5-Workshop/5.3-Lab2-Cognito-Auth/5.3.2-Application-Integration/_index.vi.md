@@ -1,5 +1,5 @@
 ---
-title: "Tích hợp Ứng dụng"
+title: "5. Tích hợp Ứng dụng"
 weight: 32
 chapter: false
 pre: "<b>5.3.2. </b>"

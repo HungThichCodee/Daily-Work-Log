@@ -19,9 +19,9 @@ Based on our design, the EC2 instance will be placed in a **Private Subnet** to 
    - Select **Ubuntu**.
    - Choose **Ubuntu Server 24.04 LTS**.
 5. **Instance type**:
-   - Select `t4g.medium`.
+   - Select `t3a.large`.
 6. **Key pair (login)**:
-   - Choose to **Create new key pair** and name it `genzite-key`.
+   - Choose **Create new key pair** with the name `genzite-key`.
 7. **Network settings**:
    - Click **Edit**.
    - **VPC**: Select `genzite-vpc`.
@@ -29,27 +29,28 @@ Based on our design, the EC2 instance will be placed in a **Private Subnet** to 
    - **Auto-assign public IP**: **Disable**.
    - **Firewall (security groups)**: Choose **Create security group**.
    - **Security group name**: `genzite-sg`.
-   - Inbound rules: Edit the **SSH (port 22)** rule and change the Source from Anywhere to **My IP**.
+![Config EC2](./images/5.4.2.1.png)
 8. **Configure storage**:
    - Increase the storage from `8` to `30` GiB.
-9. Leave the rest as default and click **Launch instance**.
+9. Leave the rest as default. Click **Launch instance**.
+![Config EC2](./images/5.4.2.2.png)
+## Step 2: Add IAM Role for EC2
 
-## Step 2: Create IAM Role for EC2
+1. Go back to the **EC2** dashboard, select **genzite-backend**, click **Actions**, then **Security** and **Modify IAM role**.
+![Config EC2](./images/5.4.2.3.png)
+2. Change the IAM role to the **genzite-role** role.
+3. Click **Update IAM role**.
+![Config EC2](./images/5.4.2.4.png)
+4. Return to the **EC2** page, proceed to **Reboot** the EC2 instance and wait a moment.
+5. You have successfully added permissions for the EC2 instance.
 
-1. Navigate to the **IAM** service, select **Roles** and click **Create role**.
-2. Create a role for **EC2** and attach the `AmazonSSMManagedInstanceCore` policy.
-3. Complete the role creation (you can name it `genzite-ec2-ssm-role`).
-4. Go back to the **EC2** dashboard, select the newly created `genzite-backend` instance.
-5. Click **Actions** > **Security** > **Modify IAM role**.
-6. Select the newly created role and click **Update IAM role**.
-7. **Reboot** the EC2 instance and wait a moment.
 
 ## Step 3: Connect and Setup Environment (Docker, Node.js)
 
-1. After rebooting, select the EC2 instance and click **Connect**.
+1. After rebooting, select the EC2 instance again and click **Connect**.
 2. Switch to the **Session Manager** tab, scroll down, and click **Connect**.
-3. In the terminal, test with the command `whoami` (it should return `ssm-user`).
-4. Proceed to run the following commands to update the system and install Docker:
+3. In the terminal, test with the command `whoami` (if it returns `ssm-user`, it is correct).
+4. Proceed to run the following commands to update the system and setup the environment:
 
 ```bash
 sudo apt update

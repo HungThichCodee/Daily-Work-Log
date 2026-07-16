@@ -1,5 +1,5 @@
 ---
-title: "Triển khai Frontend"
+title: "3. Triển khai Frontend"
 weight: 23
 chapter: false
 pre: "<b>5.2.3. </b>"
