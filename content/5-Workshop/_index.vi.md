@@ -6,28 +6,26 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+Workshop này hướng dẫn bạn cách triển khai nền tảng **Genzite**—một giải pháp AI No-Code cho phép người dùng tự động tạo giao diện trang web hoàn chỉnh bằng cách nhập mô tả (prompt) bằng ngôn ngữ tự nhiên.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+Bạn sẽ học cách xây dựng toàn bộ kiến trúc Cloud-Native trên AWS để chạy ứng dụng React (Frontend), NestJS API (Backend), luồng xử lý AI bất đồng bộ, và hệ thống thông báo dựa trên sự kiện (Event-driven).
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+#### Điểm nhấn Kiến trúc
+- **Frontend**: Lưu trữ tĩnh trên Amazon S3 và phân phối qua Amazon CloudFront.
+- **Backend**: NestJS API chạy trên Amazon EC2 kết hợp cùng Amazon RDS PostgreSQL.
+- **AI Bất đồng bộ**: Tích hợp Google Gemini thông qua hàng đợi BullMQ trên Amazon ElastiCache (Redis).
+- **Event-Driven**: Sử dụng Apache Kafka để gửi thông báo tự động (Email) qua Notification Service.
+- **Bảo mật**: Xác thực và quản lý tài khoản qua Amazon Cognito.
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Chuẩn bị (Prerequisites)](5.1-Prerequisites/)
+2. [Lab 1: Hạ tầng cơ sở & Frontend](5.2-Lab1-Infrastructure-Frontend/)
+3. [Lab 2: Xác thực với Cognito](5.3-Lab2-Cognito-Auth/)
+4. [Lab 3: Cơ sở dữ liệu & Backend](5.4-Lab3-Database-Backend/)
+5. [Lab 4: Xử lý AI Bất đồng bộ](5.5-Lab4-AI-Async/)
+6. [Lab 5: Kiến trúc Event-Driven](5.6-Lab5-Event-Driven/)
+7. [Dọn dẹp tài nguyên (Cleanup)](5.7-Cleanup/)
