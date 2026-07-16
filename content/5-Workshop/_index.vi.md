@@ -29,3 +29,5 @@ Bạn sẽ học cách xây dựng toàn bộ kiến trúc Cloud-Native trên AW
 5. [Lab 4: Xử lý AI Bất đồng bộ](5.5-Lab4-AI-Async/)
 6. [Lab 5: Kiến trúc Event-Driven](5.6-Lab5-Event-Driven/)
 7. [Dọn dẹp tài nguyên (Cleanup)](5.7-Cleanup/)
+
+![Genzite Architecture](/images/Genzite.drawio.png)

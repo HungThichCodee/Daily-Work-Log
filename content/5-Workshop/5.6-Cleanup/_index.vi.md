@@ -65,12 +65,9 @@ Chúc mừng bạn đã hoàn thành chuỗi Workshop xây dựng hệ thống G
 1. **NAT Gateway**:
    - Truy cập **VPC Dashboard**, chọn **NAT gateways**.
    - Chọn `genzite-nat-gw` -> **Actions** -> **Delete NAT gateway**. (Đợi vài phút để trạng thái chuyển thành Deleted).
-2. **Elastic IP**:
-   - Chuyển sang phần **Elastic IPs** (Menu bên trái).
-   - Chọn EIP vừa dùng cho NAT Gateway -> **Actions** -> **Release Elastic IP addresses**.
-3. **VPC Endpoints**:
+2. **VPC Endpoints**:
    - Chọn **Endpoints**, xoá S3 Gateway Endpoint đã tạo.
-4. **VPC**:
+3. **VPC**:
    - Chọn **Your VPCs**, chọn `genzite` (hoặc `genzite-vpc`).
    - Nhấn **Actions** -> **Delete VPC**.
    - Hành động này sẽ tự động xóa các Subnets, Route Tables, Internet Gateway và các Security Groups đi kèm VPC đó.

@@ -29,3 +29,5 @@ You will learn how to build the complete Cloud-Native AWS infrastructure require
 5. [Lab 4: AI & Asynchronous Processing](5.5-Lab4-AI-Async/)
 6. [Lab 5: Event-Driven Architecture](5.6-Lab5-Event-Driven/)
 7. [Clean up](5.7-Cleanup/)
+
+![Genzite Architecture](/images/Genzite.drawio.png)
