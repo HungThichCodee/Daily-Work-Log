@@ -58,7 +58,18 @@ To avoid incurring unexpected charges (especially for services outside the Free 
    - Click **Empty** to delete all files inside (you need to type `permanently delete` to confirm).
    - Once the bucket is empty, click **Delete** to remove the bucket itself.
 
-## Step 6: Delete Networking (VPC & Security Groups)
+## Step 6: Delete AWS Backup Resources
+
+1. **AWS Backup Plans**:
+   - Go to the **AWS Backup Dashboard**, select **Backup plans**.
+   - Select the backup plan you created (e.g., `genzite-backup-plan`) -> **Delete**.
+2. **Recovery Points**:
+   - Select **Backup vaults**, click on the Vault you created (e.g., `genzite-backup-vault`).
+   - Select all Recovery points inside -> **Delete** (type to confirm deletion).
+3. **AWS Backup Vaults**:
+   - Once the Vault is empty, select the Vault and click **Delete**.
+
+## Step 7: Delete Networking (VPC & Security Groups)
 
 *Note: You must delete the NAT Gateway and release the Elastic IP first to avoid ongoing charges.*
 

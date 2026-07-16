@@ -58,7 +58,18 @@ Chúc mừng bạn đã hoàn thành chuỗi Workshop xây dựng hệ thống G
    - Nhấn **Empty** để xoá toàn bộ file bên trong (bạn cần gõ `permanently delete` để xác nhận).
    - Sau khi bucket trống, nhấn **Delete** để xoá bucket.
 
-## Bước 6: Xóa Mạng lưới (VPC & Security Groups)
+## Bước 6: Xóa tài nguyên Sao lưu (AWS Backup)
+
+1. **AWS Backup Plans**:
+   - Truy cập **AWS Backup Dashboard**, chọn **Backup plans**.
+   - Chọn Backup plan đã tạo (VD: `genzite-backup-plan`) -> **Delete**.
+2. **Recovery Points (Bản sao lưu)**:
+   - Chọn **Backup vaults**, nhấp vào Vault bạn đã tạo (VD: `genzite-backup-vault`).
+   - Chọn tất cả các Recovery points bên trong -> **Delete** (cần xác nhận để xóa).
+3. **AWS Backup Vaults**:
+   - Sau khi Vault đã trống, chọn Vault đó và nhấn **Delete**.
+
+## Bước 7: Xóa Mạng lưới (VPC & Security Groups)
 
 *Lưu ý: Bạn phải xóa NAT Gateway và giải phóng Elastic IP trước tiên để không bị mất phí.*
 
